@@ -8,6 +8,8 @@
 void free_array(char **array)
 {
 	size_t i;
+	char **array;
+	array = malloc(20*sizeof(char*));
 
 	for (i = 0; i<arr_size;i++)
 	{

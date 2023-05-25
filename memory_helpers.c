@@ -9,8 +9,9 @@ void free_array(char **array)
 {
 	size_t i;
 
-	for (i = 0; array[i] != '\0' i++)
+	for (i = 0; i<arr_size;i++)
 	{
+		array[i]='\0';
 		free(array[i]);
 	}
 

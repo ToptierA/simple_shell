@@ -34,12 +34,20 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[index] < s2[index])
 			return (s1[index] - s2[index]);
+
 		else if (s1[index] > s2[index])
 			return (s1[index] - s2[index]);
 	}
 
 	return (0);
 }
+
+/**
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
+ *  Return: pointer to newly allocated space in memory
+ */
+
 
 char *_strdup(char *str)
 {
@@ -53,15 +61,17 @@ char *_strdup(char *str)
 	length = _strlen(str);
 
 	arr = malloc((length + 1) * sizeof(char));
-		if (arr == NULL)
-					return (NULL);
-		for (i = 0; i < length; i++)
-					arr[i] = str[i];for (i = 0; i < length; i++)
-								arr[i] = str[i];
-		arr[i] = '\0';
+	if (arr == NULL)
+		return (NULL);
 
-		return (arr);
+	for (i = 0; i < length; i++)
+		arr[i] = str[i];
+
+	arr[i] = '\0';
+
+	return (arr);
 }
+
 
 /**
 * _putchar - prints a single character to stdout

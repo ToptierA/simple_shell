@@ -25,7 +25,7 @@ int main(__attribute__((unused)) int argc, char **argv, char **env)
 
 	signal(SIGINT, SIG_IGN);
 
-	// display splash screen
+	/* display splash screen*/
 	if((fptr = fopen(filename,"r")) == NULL)
 	{
 		fprintf(stderr,"error opening %s\n",filename);
@@ -38,7 +38,7 @@ int main(__attribute__((unused)) int argc, char **argv, char **env)
 	{
 		errorcount++;
 		if (atty_is)
-			write(STDOUT_FILENO, "hella_shell$ ", 13);
+			write(STDOUT_FILENO, "willy_shell$ ", 13);
 		bytes_read = getline(&user_input, &nbytes, stdin);
 		if (bytes_read == -1)
 		{

@@ -72,7 +72,7 @@ int _myunsetenv(info_t *info)
 			_unsetenv(info, info->argv[i]);
 
 			return (0);
-			}
+}
 
 /**
  * populate_env_list - populates env linked list
@@ -86,7 +86,7 @@ list_t *node = NULL;
 size_t i;
 
 for (i = 0; environ[i]; i++)
-add_node_end(&node, environ[i], 0);
-info->env = node;
-return (0);
+	add_node_end(&node, environ[i], 0);
+	info->env = node;
+	return (0);
 }

@@ -24,7 +24,7 @@ int set_alias(info_t *info, char *str)
 	char *p, c;
 	int ret;
 
-	p = _strch(str, '=');
+	p = _strchr(str, '=');
 	if (!p)
 		return (1);
 	c = *p;

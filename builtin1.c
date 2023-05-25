@@ -19,7 +19,7 @@ int _myhistory(info_t *info)
  * @str: the string alias
  * Return: Always 0 on success, 1 on error
  */
-int unset_alias(info_ *infor, char *str)
+int set_alias(info_ *info, char *str)
 {
 	char *p, c;
 	int ret;
@@ -50,9 +50,9 @@ int set_alias(info_t *info, char *str)
 	if (!p)
 		return (1);
 	if (!*++p)
-		return (unset_alias(info, str));
+		return (set_alias(info, str));
 
-	unset_alias(infor, str);
+	set_alias(info, str);
 	return (add_node_end(&(info->alias), str, 0) == NULL);
 }
 

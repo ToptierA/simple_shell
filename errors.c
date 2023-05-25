@@ -30,6 +30,7 @@ int _eputchar(char c)
 {
 	static int i;
 	static char buf[WRITE_BUF_SIZE]
+		int buf
 
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{

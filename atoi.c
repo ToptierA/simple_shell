@@ -33,11 +33,9 @@ int is_delim(char c, char *delim)
 
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z' || (c >= 'A' && c <= 'Z'))
-			return (1);
-			else
-			return (0);
-			}
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+			return (1)
+}
 /**
  * _atoi - converts a string to an integer
  * @s: the string to be converted

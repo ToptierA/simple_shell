@@ -19,7 +19,7 @@ int _myhistory(info_t *info)
  * @str: the string alias
  * Return: Always 0 on success, 1 on error
  */
-int set_alias(info_ *info, char *str)
+int set_alias(info_t *info, char *str)
 {
 	char *p, c;
 	int ret;
@@ -91,7 +91,7 @@ int _myalias(info_t *info)
 	char *p = NULL;
 	list_t *node = NULL;
 
-	if (infor->argc == 1)
+	if (info->argc == 1)
 	{
 		node = info->alias;
 		while (node)

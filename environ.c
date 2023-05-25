@@ -31,7 +31,7 @@ char *_getenv(info_t *info, const char *name)
 			return (p);
 		node = node->next;
 	}
-	return (NULL)
+	return (NULL);
 }
 
 /**
@@ -68,7 +68,7 @@ int _myunsetenv(info_t *info)
 		_eputs("Too few arguements.\n");
 		return (1);
 	}
-	for (i = 1; i <= infor->argc; i++
+	for (i = 1; i <= info->argc; i++
 			_unsetenv(info, info->argv[i]);
 
 			return (0);
